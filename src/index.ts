@@ -1,4 +1,3 @@
-import { config } from 'chai';
 import Express from 'express';
 
 const app = Express();

@@ -4,7 +4,9 @@
   "description": "Calcula la cantidad de metros cubicos consumidos en cada apartamento en Isla del Lago",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register .src/test/*.ts"
+    "start": "ts-node ./src/index.ts",
+    "watch": "nodemon ./src/index.ts",
+    "test": "mocha -r ts-node/register ./src/test/*.ts"
   },
   "repository": {
     "type": "git",

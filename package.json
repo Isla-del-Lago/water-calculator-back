@@ -1,0 +1,31 @@
+{
+  "name": "water-calculator-back",
+  "version": "1.0.0",
+  "description": "Calcula la cantidad de metros cubicos consumidos en cada apartamento en Isla del Lago",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isla-del-Lago/water-calculator-back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isla-del-Lago/water-calculator-back/issues"
+  },
+  "homepage": "https://github.com/Isla-del-Lago/water-calculator-back#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/express": "^4.17.9",
+    "@types/mocha": "^8.2.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

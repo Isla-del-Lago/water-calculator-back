@@ -5,7 +5,8 @@ import { sequelize } from '../config/database';
 const ValorUnitario = sequelize.define('ValorUnitario', {
     bill_date: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        primaryKey: true
     },
     m3_rsd_bsc: {
         type: DataTypes.INTEGER,
@@ -49,7 +50,9 @@ const ValorUnitario = sequelize.define('ValorUnitario', {
     }
 },
     {
-        tableName: 'ValoresUnitarios'
+        tableName: 'ValoresUnitarios',
+        createdAt: false,
+        updatedAt: false,
     }
 );
 

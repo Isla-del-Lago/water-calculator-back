@@ -4,7 +4,8 @@ import { sequelize } from '../config/database';
 export const Consumo = sequelize.define('Consumo', {
     id: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        primaryKey: true
     },
     num_apt: {
         type: DataTypes.STRING,

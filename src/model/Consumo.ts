@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../config/database';
 
-export const Consumo = sequelize.define('Consumo', {
+const Consumo = sequelize.define('Consumo', {
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -36,3 +36,5 @@ export const Consumo = sequelize.define('Consumo', {
         tableName: 'Consumos'
     }
 );
+
+export default Consumo;

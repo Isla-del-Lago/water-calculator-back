@@ -2,7 +2,7 @@ import { INTEGER } from 'sequelize';
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../config/database';
 
-export const ValorUnitario = sequelize.define('ValorUnitario', {
+const ValorUnitario = sequelize.define('ValorUnitario', {
     bill_date: {
         type: DataTypes.STRING,
         allowNull: false
@@ -52,3 +52,5 @@ export const ValorUnitario = sequelize.define('ValorUnitario', {
         tableName: 'ValoresUnitarios'
     }
 );
+
+export default ValorUnitario;

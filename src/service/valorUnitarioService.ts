@@ -6,11 +6,13 @@ import IValorUnitario from '../util/ValorUnitario';
  * @param billDate Bill date.
  */
 export const getValorUnitarioByBillDate = async (billDate: string) => {
-    return await ValorUnitario.findAll({
+    const valorUnitario = await ValorUnitario.findAll({
         where: {
             bill_date: billDate
         }
     });
+
+    return valorUnitario
 }
 
 /**

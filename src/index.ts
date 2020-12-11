@@ -9,6 +9,7 @@ const app = Express();
 
 const SERVER_PORT = process.env.SERVER_PORT || 3000;
 
+app.use(Express.json());
 app.use('/valoresunitarios', valorUnitarioRoutes);
 
 app.listen(SERVER_PORT, () => {

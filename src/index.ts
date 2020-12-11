@@ -9,7 +9,7 @@ const app = Express();
 
 const SERVER_PORT = process.env.SERVER_PORT || 3000;
 
-app.use('/valorunitario', valorUnitarioRoutes);
+app.use('/valoresunitarios', valorUnitarioRoutes);
 
 app.listen(SERVER_PORT, () => {
     sequelize.authenticate()

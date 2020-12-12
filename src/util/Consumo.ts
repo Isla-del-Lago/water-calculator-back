@@ -1,5 +1,4 @@
 export default interface Consumo {
-    id: number,
     num_apt: string,
     bill_date: string,
     consumption_price: number,

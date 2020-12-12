@@ -5,7 +5,8 @@ const Consumo = sequelize.define('Consumo', {
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true
     },
     num_apt: {
         type: DataTypes.STRING,
@@ -33,7 +34,9 @@ const Consumo = sequelize.define('Consumo', {
     }
 },
     {
-        tableName: 'Consumos'
+        tableName: 'Consumos',
+        createdAt: false,
+        updatedAt: false
     }
 );
 

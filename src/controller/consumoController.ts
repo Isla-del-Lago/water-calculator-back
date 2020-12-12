@@ -31,7 +31,7 @@ export const getConsumosByBillDate = async (req: Request, res: Response): Promis
     const { billDate } = req.params;
 
     try {
-        const billDateConsumos = consumoService.getConsumosByBillDate(billDate);
+        const billDateConsumos = await consumoService.getConsumosByBillDate(billDate);
 
         res.status(200).json({ data: billDateConsumos });
     } catch (error) {
@@ -67,7 +67,7 @@ export const saveConsumo = async (req: Request, res: Response): Promise<void> =>
     const consumo: Consumo = req.body;
 
     try {
-        const saveResponse = consumoService.saveConsumo(consumo);
+        const saveResponse = await consumoService.saveConsumo(consumo);
 
         res.status(201).json({ data: saveResponse });
     } catch (error) {

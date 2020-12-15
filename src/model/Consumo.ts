@@ -1,10 +1,12 @@
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../config/database';
 
-export const Consumo = sequelize.define('Consumo', {
+const Consumo = sequelize.define('Consumo', {
     id: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true
     },
     num_apt: {
         type: DataTypes.STRING,
@@ -32,6 +34,10 @@ export const Consumo = sequelize.define('Consumo', {
     }
 },
     {
-        tableName: 'Consumos'
+        tableName: 'Consumos',
+        createdAt: false,
+        updatedAt: false
     }
 );
+
+export default Consumo;

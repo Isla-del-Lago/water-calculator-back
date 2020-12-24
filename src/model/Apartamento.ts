@@ -4,7 +4,8 @@ import { sequelize } from '../config/database';
 export const Apartamento = sequelize.define('Apartamento', {
     num_apt: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        primaryKey: true
     },
     owner_name: {
         type: DataTypes.STRING,
@@ -16,6 +17,8 @@ export const Apartamento = sequelize.define('Apartamento', {
     }
 },
     {
-        tableName: 'Apartamentos'
+        tableName: 'Apartamentos',
+        updatedAt: false,
+        createdAt: false
     }
 );

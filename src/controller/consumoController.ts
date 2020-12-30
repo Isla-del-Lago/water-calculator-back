@@ -46,10 +46,10 @@ export const getConsumosByBillDate = async (req: Request, res: Response): Promis
  * @param res Response object.
  */
 export const getConsumosByAptNumberAndBillDate = async (req: Request, res: Response): Promise<void> => {
-    const { billDate, aptNumber } = req.params;
+    const { billDate, aptNum } = req.params;
 
     try {
-        const billDateAndAptNumberConsumos = await consumoService.getConsumosByAptNumberAndBillDate(billDate, aptNumber);
+        const billDateAndAptNumberConsumos = await consumoService.getConsumosByAptNumberAndBillDate(billDate, aptNum);
 
         res.status(200).json({ data: billDateAndAptNumberConsumos });
     } catch (error) {

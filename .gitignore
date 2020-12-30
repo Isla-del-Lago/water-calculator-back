@@ -1,2 +1,4 @@
 /node_modules
 .env
+wallaby.js
+/.nyc_output

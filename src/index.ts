@@ -7,7 +7,7 @@ import apartmentRoutes from './routes/apartmentRoutes';
 
 dotenv.config();
 
-const app = Express();
+export const app = Express();
 
 const SERVER_PORT = process.env.PORT || 3000;
 

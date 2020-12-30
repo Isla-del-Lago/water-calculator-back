@@ -35,5 +35,6 @@ export const getValorUnitarioByBillDate = async (req: Request, res: Response) =>
         res.status(200).json({ data: valorUnitario });
     } catch (error) {
         const errorMessage: Error = { message: 'Error getting valor unitario', data: error }
+        res.status(500).json({ error: errorMessage });
     }
 }

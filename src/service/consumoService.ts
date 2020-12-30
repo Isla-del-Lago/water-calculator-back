@@ -35,10 +35,11 @@ export const getConsumosByBillDate = async (billDate: string) => {
  * @param aptNumber Apartment number.
  */
 export const getConsumosByAptNumberAndBillDate = async (billDate: string, aptNumber: string) => {
+    console.log(billDate, aptNumber);
     const consumosByBillDateAndAptNumber = await Consumo.findAll({
         where: {
             bill_date: billDate,
-            apt_num: aptNumber
+            num_apt: aptNumber
         }
     });
 
